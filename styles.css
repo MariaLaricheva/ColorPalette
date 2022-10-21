@@ -1,0 +1,144 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url("fonts/Roboto.ttf")
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url("fonts/Robotobold.ttf");
+    font-weight: bold;
+}
+
+body {
+    font-family: Roboto, sans-serif;
+}
+
+.header {
+    height: 20vh;
+    font-size: 4vh;
+    background-color: #341050;
+    color: white;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+}
+
+.rainbow{
+    transition: all 2s;
+    animation: animate 15s infinite;
+}
+
+@keyframes animate{
+    0%{
+        color: white;
+    }
+    10%{
+        color: #f54f4f;
+    }
+    20% {
+        color: orange;
+    }
+    30% {
+        color: #ffff6a;
+    }
+    40% {
+        color: #5ade5a;
+    }
+    50% {
+        color: #61a2f1;
+    }
+    60% {
+        color: #a85ecb;
+    }
+    70%{
+        color: #f54f4f;
+    }
+    10%{
+        color: white;
+    }
+}
+
+.space-bar {
+    padding:  4px 45px 6px;
+    margin: 0 5px;
+    border: white 3px solid;
+    border-radius: 15px;
+    transition: all 0.5s;
+    animation: clicking 7s infinite;
+}
+
+@keyframes clicking {
+    0% {
+        font-size: 100%;
+    }
+
+    10% {
+        font-size: 90%;
+    }
+
+    13% {
+        font-size: 97%;
+    }
+
+    17% {
+        font-size: 85%;
+    }
+    
+    23% {
+        font-size: 100%;
+    }
+}
+
+.main {
+    font-weight: normal;
+    display: flex;
+    height: 80vh;
+}
+
+.col {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.col h2 {
+    padding: 10px;
+    color: white;
+    border-radius: 10px;
+    transition: background-color 0.3s;
+}
+
+.col h2:hover {
+    background: rgba(0,0,0,0.1);
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.col button {
+    outline: none;
+    padding: 10px;
+    border: none;
+    background: transparent;
+    line-height: 2rem;
+    font-size: 1.5rem;
+    color: white;
+    transition: font-size 0.2s;
+}
+
+.col button:hover {
+    font-size: 1.8rem;
+    color: white;
+    cursor: pointer;
+}
+
