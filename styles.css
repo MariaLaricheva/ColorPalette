@@ -67,9 +67,13 @@ body {
     }
 }
 
+.wrapper {
+
+}
+
 .space-bar {
-    padding:  4px 45px 6px;
-    margin: 0 5px;
+    padding:  4px 50px 6px;
+    margin: 0 10px;
     border: white 3px solid;
     border-radius: 15px;
     transition: all 0.5s;
@@ -92,7 +96,7 @@ body {
     17% {
         font-size: 85%;
     }
-    
+
     23% {
         font-size: 100%;
     }
