@@ -7,6 +7,11 @@ document.addEventListener("keydown", event => {
     }
 })
 
+const refreshBtn = document.getElementById('refreshBtn')
+refreshBtn.addEventListener('click', event => {
+    event.preventDefault()
+    resetColors()
+})
 
 
 document.addEventListener("click", event => {
